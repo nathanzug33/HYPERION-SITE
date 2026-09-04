@@ -1,0 +1,5 @@
+Déposez ici vos photos (JPG, ~1600px de large, < 400 Ko) :
+  industrie.jpg  -> bande "Industrie" de la page d'accueil
+  it.jpg         -> bande "IT & Numérique" de la page d'accueil
+Sans ces fichiers, le dégradé bleu nuit s'affiche à la place : rien ne casse.
+Photos des co-fondateurs : voir le commentaire dans equipe.html.
