@@ -96,13 +96,13 @@ button{font:inherit}
    --photo reste actif : une vraie photo ajoutée plus tard se superpose
    toujours par-dessus via la variable, sans rien changer ici. */
 .bands{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.band{position:relative;border-radius:var(--r);overflow:hidden;min-height:440px;padding:36px 32px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;
+.band{position:relative;border-radius:var(--r);overflow:hidden;min-height:440px;padding:36px 32px;display:flex;flex-direction:column;justify-content:flex-start;color:#fff;
   --band-a:#3C5170;--band-b:#1A2434;--glow-c:rgba(157,192,236,.3);
-  background-image:linear-gradient(180deg,rgba(22,30,40,.2) 0%,rgba(16,21,29,.88) 72%),var(--photo),linear-gradient(150deg,var(--band-a),var(--band-b) 100%);background-size:cover;background-position:center}
+  background-image:linear-gradient(0deg,rgba(22,30,40,.2) 0%,rgba(16,21,29,.88) 72%),var(--photo),linear-gradient(150deg,var(--band-a),var(--band-b) 100%);background-size:cover;background-position:center}
 .band.industrie{--band-a:#4A6690;--band-b:#1A2434;--glow-c:rgba(157,192,236,.3)}
 .band.it{--band-a:#6E2B66;--band-b:#1C1522;--glow-c:rgba(225,120,195,.25)}
-.band .glow{position:absolute;top:-120px;right:-90px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,var(--glow-c),transparent 70%);pointer-events:none}
-.band .pattern{position:absolute;inset:0;opacity:.18;background-image:linear-gradient(rgba(157,192,236,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(157,192,236,.6) 1px,transparent 1px);background-size:38px 38px;mask-image:linear-gradient(180deg,#000 0,transparent 75%);-webkit-mask-image:linear-gradient(180deg,#000 0,transparent 75%)}
+.band .glow{position:absolute;bottom:-130px;right:-90px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,var(--glow-c),transparent 70%);pointer-events:none}
+.band .pattern{position:absolute;inset:0;opacity:.18;background-image:linear-gradient(rgba(157,192,236,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(157,192,236,.6) 1px,transparent 1px);background-size:38px 38px;mask-image:linear-gradient(0deg,#000 0,transparent 65%);-webkit-mask-image:linear-gradient(0deg,#000 0,transparent 65%)}
 .band .art{position:absolute;bottom:-46px;right:-36px;width:300px;height:300px;stroke:rgba(255,255,255,.14);fill:none;stroke-width:1;opacity:1;pointer-events:none}
 .band>*{position:relative}
 .band h3{color:#fff;font-size:28px;margin-bottom:8px}
