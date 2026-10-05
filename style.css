@@ -90,12 +90,22 @@ button{font:inherit}
 .step .n{font-family:'Sora';font-weight:700;color:var(--blue);font-size:14px;letter-spacing:.08em}
 .step h3{font-size:19px;margin:10px 0 8px}.step p{color:var(--muted);font-size:15px}
 
-/* bandes imagées (industrie / IT) */
+/* bandes (industrie / IT) — conçues pour être belles SANS photo (le site
+   n'en a pas aujourd'hui) : un dégradé de marque distinct par secteur plutôt
+   que le gris-marine quasi plat d'origine, un glow radial (même motif que
+   le hero/phead) et l'icône du secteur agrandie en filigrane. Le mécanisme
+   --photo reste actif : une vraie photo ajoutée plus tard se superpose
+   toujours par-dessus via la variable, sans rien changer ici. */
 .bands{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .band{position:relative;border-radius:var(--r);overflow:hidden;min-height:440px;padding:36px 32px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;
-  background-image:linear-gradient(180deg,rgba(34,45,60,.25) 0%,rgba(34,45,60,.92) 70%),var(--photo),linear-gradient(135deg,#2C3B52,#222D3C);background-size:cover;background-position:center}
+  background-image:linear-gradient(180deg,rgba(22,30,40,.2) 0%,rgba(16,21,29,.88) 72%),var(--photo),linear-gradient(150deg,var(--band-a),var(--band-b) 100%);background-size:cover;background-position:center}
+.band.industrie{--band-a:#4A6690;--band-b:#1A2434}
+.band.it{--band-a:#6E2B66;--band-b:#1C1522}
+.band .glow{position:absolute;top:-120px;right:-90px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,var(--glow-c),transparent 70%);pointer-events:none}
+.band.industrie .glow{--glow-c:rgba(157,192,236,.35)}
+.band.it .glow{--glow-c:rgba(225,120,195,.3)}
 .band .pattern{position:absolute;inset:0;opacity:.18;background-image:linear-gradient(rgba(157,192,236,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(157,192,236,.6) 1px,transparent 1px);background-size:38px 38px;mask-image:linear-gradient(180deg,#000 0,transparent 75%);-webkit-mask-image:linear-gradient(180deg,#000 0,transparent 75%)}
-.band .art{position:absolute;top:26px;right:26px;width:120px;height:120px;stroke:var(--sky);fill:none;stroke-width:1.2;opacity:.9}
+.band .art{position:absolute;bottom:-46px;right:-36px;width:300px;height:300px;stroke:rgba(255,255,255,.14);fill:none;stroke-width:1;opacity:1;pointer-events:none}
 .band>*{position:relative}
 .band h3{color:#fff;font-size:28px;margin-bottom:8px}
 .band p{color:#C2CFE0;font-size:15.5px;max-width:420px;margin-bottom:18px}

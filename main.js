@@ -18,7 +18,6 @@ const NAV = `
   <div class="item has-sub" data-page="secteurs"><a href="secteurs.html">Secteurs</a>
     <div class="sub"><a href="secteurs.html#industrie">Industrie<small>Aéro-défense, énergie, chimie…</small></a>
     <a href="secteurs.html#it">IT &amp; Numérique<small>Dev, data, cyber, cloud…</small></a></div></div>
-  <div class="item" data-page="equipe"><a href="equipe.html">L'équipe</a></div>
   <div class="item" data-page="emploi"><a href="offres-emploi.html">Offres d'emploi</a></div>
   <div class="item" data-page="contact"><a href="contact.html">Contact</a></div>
  </nav>
@@ -30,7 +29,7 @@ const FOOT = `
  <div class="foot-top">
   <div><img class="logo" src="assets/logo_white.png" alt="Hyperion Group"><div class="tagline">Engineering, illuminated.</div></div>
   <div class="foot-links">
-   <div><b>Société</b><a href="index.html#metier">Le métier</a><a href="equipe.html">L'équipe</a><a href="index.html#implantation">Implantation</a><a href="offres-emploi.html">Offres d'emploi</a></div>
+   <div><b>Société</b><a href="index.html#metier">Le métier</a><a href="index.html#implantation">Implantation</a><a href="offres-emploi.html">Offres d'emploi</a></div>
    <div><b>Offres</b><a href="offres.html#assistance">Assistance technique</a><a href="offres.html#recrutement">Recrutement</a><a href="secteurs.html#industrie">Industrie</a><a href="secteurs.html#it">IT &amp; Numérique</a></div>
    <div><b>Contact</b><a href="mailto:${EMAIL}">${EMAIL}</a><a href="contact.html">Nous écrire</a></div>
   </div>
