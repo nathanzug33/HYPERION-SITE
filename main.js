@@ -11,7 +11,6 @@ const NAV = `
  <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
  <nav class="menu">
   <div class="item" data-page="index"><a href="index.html">Accueil</a></div>
-  <div class="item" data-page="metier"><a href="index.html#metier">Le métier</a></div>
   <div class="item has-sub" data-page="offres"><a href="offres.html">Nos services</a>
     <div class="sub"><a href="offres.html#assistance">Assistance technique<small>Ingénieurs en régie, au TJM</small></a>
     <a href="offres.html#recrutement">Recrutement spécialisé<small>Chasse de profils, au succès</small></a></div></div>
@@ -29,7 +28,7 @@ const FOOT = `
  <div class="foot-top">
   <div><img class="logo" src="assets/logo_white.png" alt="Hyperion Group"><div class="tagline">Engineering, illuminated.</div></div>
   <div class="foot-links">
-   <div><b>Société</b><a href="index.html#metier">Le métier</a><a href="index.html#implantation">Implantation</a><a href="offres-emploi.html">Offres d'emploi</a></div>
+   <div><b>Société</b><a href="offres-emploi.html">Offres d'emploi</a></div>
    <div><b>Offres</b><a href="offres.html#assistance">Assistance technique</a><a href="offres.html#recrutement">Recrutement</a><a href="secteurs.html#industrie">Industrie</a><a href="secteurs.html#it">IT &amp; Numérique</a></div>
    <div><b>Contact</b><a href="mailto:${EMAIL}">${EMAIL}</a><a href="contact.html">Nous écrire</a></div>
   </div>

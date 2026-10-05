@@ -56,7 +56,6 @@ button{font:inherit}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap}
 /* mosaïque des métiers dans le hero */
 .mosaic{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.mosaic .orbit{position:absolute;inset:-70px -60px;z-index:0;opacity:.85;pointer-events:none}
 .tile{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-height:132px;padding:16px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(157,192,236,.22);backdrop-filter:blur(4px);color:#EAF0F8;transition:background .2s,border-color .2s,transform .2s}
 .tile:hover{background:rgba(157,192,236,.16);border-color:var(--sky);transform:translateY(-2px)}
 .tile svg{width:30px;height:30px;stroke:var(--sky);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
@@ -111,11 +110,6 @@ button{font:inherit}
 .band .chips{display:flex;flex-wrap:wrap;gap:8px}
 .band .chips a{font-size:13.5px;font-weight:500;padding:7px 13px;border-radius:30px;border:1px solid rgba(157,192,236,.4);background:rgba(255,255,255,.06);color:#EAF0F8;transition:.2s}
 .band .chips a:hover{background:var(--sky);color:var(--navy);border-color:var(--sky)}
-
-/* implantation */
-.cities{display:flex;gap:13px;flex-wrap:wrap}
-.city{background:#fff;border:1px solid var(--line);border-radius:40px;padding:10px 20px;font-size:15px;font-weight:500;color:#3A4554}
-.city.soon{color:#8693A4;border-style:dashed}
 
 /* bande CTA */
 .cta-band{background:var(--navy);color:#fff}
@@ -229,7 +223,6 @@ dialog.mdlg::backdrop{background:rgba(22,30,40,.55);backdrop-filter:blur(3px)}
  .hero .wrap{grid-template-columns:1fr;padding:64px 28px 72px}
  .mosaic{max-width:520px;grid-template-columns:1fr 1fr}
  .tile:nth-child(n){transform:none}
- .mosaic .orbit{display:none}
  .steps,.how{grid-template-columns:1fr 1fr}
 }
 @media(max-width:880px){
@@ -255,9 +248,7 @@ dialog.mdlg::backdrop{background:rgba(22,30,40,.55);backdrop-filter:blur(3px)}
 }
 @media(prefers-reduced-motion:no-preference){
  .hero-inner{opacity:0;transform:translateY(14px);animation:fu .7s ease forwards}
- .sun{animation:pulse 3.6s ease-in-out infinite}
  dialog.mdlg[open]{animation:pop .22s ease}
  @keyframes fu{to{opacity:1;transform:none}}
- @keyframes pulse{0%,100%{opacity:.85}50%{opacity:1}}
  @keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 }
